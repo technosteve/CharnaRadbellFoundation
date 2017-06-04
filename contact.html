@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Charna Radbell Foundation - Contacts</title>
+  <meta charset="UTF-8">
+  <meta charset="utf-8">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact-form.css" media="screen">
+    <script src="js/jquery.js"></script>
+  <script src="js/jquery-migrate-1.2.1.js"></script>
+ <link rel="stylesheet" href="css/contact-form.css" media="screen">
+  <script src="js/TMForm.js"></script>
+  <script src="js/modal.js"></script>  
+   <script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script>  
+  <!--[if lt IE 8]>
+   <div style=' clear: both; text-align:center; position: relative;'>
+     <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+       <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+    </a>
+  </div>
+<![endif]-->
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+  <![endif]-->
+
+  
+</head>
+<body>
+
+
+  <!--========================================================
+                            HEADER 
+  =========================================================-->
+  
+	<header id="header">
+		
+			<div id="stuck_container">
+				<div class="min-body">
+					<div class="head">
+					
+						
+							<div class="element-header logo">
+								<h1><a class="logo-link" href="index.html">Charna Radbell Foundation</a></h1>
+							</div>
+						
+						
+						
+							<div class="element-header header_navigation">
+			                   <nav>
+			                    <ul class="sf-menu">
+			                      <li><a href="index.html">Home</a></li>
+			                      <li><a href="about.html">About us</a>
+<!--			                        <ul>
+			                          <li><a href="#">Aliquam con</a>
+											<ul>
+			                              <li><a href="#">Mauris accu</a></li>
+			                              <li><a href="#">Nulla vel dia</a>
+			                                
+			                              </li>
+			                              <li><a href="#">Sed in lacus</a></li>
+			                               <li><a href="#">Lacinia est</a></li>
+			                                <li><a href="#">Proin dictum</a></li>
+			                            </ul>
+
+			                          </li>
+			                          
+			                          <li><a href="#">Fermentum </a></li>
+			                           <li><a href="#">Mauris accu</a></li>
+			                            <li><a href="#">Nulla vel dia</a></li>
+			                            <li><a href="#">Sed in lacus</a></li>
+			                        </ul> -->
+			                      </li>
+			                      <li><a href="story.html">Our Story</a></li>
+			                      <li><a href="news.html">News</a></li>
+			                      <li><a href="donate.html">Donate</a></li>
+			                      <li class="current"><a href="contact.html">Contact Us</a></li>
+			                      
+			                    </ul>
+			                  </nav>
+			                  <div class="clear"></div>
+			         </div>
+						 <div class="clear"></div>
+					</div>
+				</div>
+			
+		</div>
+	</header>
+  
+  <!--========================================================
+                            CONTENT 
+  =========================================================-->
+<div class="min-body min-body-page">
+  <section id="content">
+
+    <div class="page5-block1">
+      <div class="container">
+        <div class="row">
+          <div class="grid_12">
+            <div class="page5-block1-head title-page">
+              <h4>Contact us</h4>
+            </div>
+          </div>
+        </div>
+
+      
+    <div class="content_map">
+      <div class="google-map-api"> 
+        <div id="map-canvas" class="gmap"></div> 
+      </div> 
+    </div>
+
+      </div>
+    </div>
+
+    <div class="page5-block2">
+      <div class="container">
+<!--           <div class="contact-form-body">
+          <form id="contact-form" method="post" action="#">
+             <fieldset>
+                <div class="row">
+                  <div class="grid_4">
+                    <label class="name">
+                      <input type="text" name="name" placeholder="First name" value="" data-constraints="@Required @JustLetters"  />
+                      <span class="empty-message">*This field is required.</span>
+                      <span class="error-message">*This is not a valid name.</span>
+                    </label>
+                  </div>
+
+                  <div class="grid_4">
+                    <label class="name">
+                      <input type="text" name="last_name" placeholder="Last name" value="" data-constraints="@Required @JustLetters"  />
+                      <span class="empty-message">*This field is required.</span>
+                      <span class="error-message">*This is not a valid name.</span>
+                    </label>
+                  </div>
+
+                  <div class="grid_4">
+                      <label class="email">
+            <input type="text" name="email" placeholder="Email:" value="" data-constraints="@Required @Email" />
+              <span class="empty-message">*This field is required.</span>
+              <span class="error-message">*This is not a valid email.</span>
+            </label>
+                  </div>
+                </div>
+                  <label class="message">
+                      <textarea name="message" rows="7" placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                      <span class="empty-message">*This field is required.</span>
+                      <span class="error-message">*The message is too short.</span>
+                    </label>
+                     <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> 
+                    <div class="form-buttons">
+                      <div class="button-send">
+                        <a href="#" class="pine"  data-type="submit" >Send your message</a>
+                      </div>
+                    </div>
+          </fieldset> 
+           <div class="modal fade response-message">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                  You message has been sent! We will be in touch soon.
+                </div>      
+              </div>
+            </div>
+          </div>
+          </form>
+          </div>-->
+            <div class='row'>
+                <div class='grid_4'>
+                    <p>Arlene and Larry Radbell</p>
+<!--                    <p>Julia Wannamaker</p>-->
+                    <p>Allison Blum Yessin</p>
+                </div>
+                <div class='grid_4'>
+                    <p>Trustees</p>
+<!--                    <p>Executive Director</p>-->
+                    <p>Office of Development, NYP</p>
+                </div>
+                <div class='grid_4'>
+                    <p><a href="mailto:charnaradbellfoundation@gmail.com">charnaradbellfoundation@gmail.com</a></p>
+<!--                    <p><a href="mailto:juliawannamaker@gmail.com">juliawannamaker@gmail.com</a></p>-->
+                    <p><a href="mailto:alb9020@nyp.org">alb9020@nyp.org</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="grid_4">
+                    <div class="contact-body-text">
+                        <ul>
+                            <li>The Charna Radbell Foundation</li>
+                            <li>245 East 63rd Street Unit 1012</li>
+                            <li>New York, NY 10065</li>
+                            <li>Phone: 212.750.9890</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid_4"></div>
+                <div class="grid_4">
+                     <div class="contact-body-text">
+                        <ul>
+                            <li><a href="http://childrensnyp.org/mschony/charnas-kids-club.html">Charna's Kids Club</a></li>
+                            <li>NewYork-Presbyterian</li>
+                            <li>Morgan Stanley Children's Hospital</li>
+                            <li>3959 Broadway (165th Street and Broadway)</li>
+                            <li>New York, NY 10032</li>
+                            <li>Phone: 212.305.7420</li>
+                        </ul>
+                    </div>                   
+                </div>
+            </div>
+
+          
+            <div class="row">
+              <div class="grid_12">
+                <div class="social">
+                <div class="social-message">
+                  <ul>
+                    <li class="social-message-button"><a href="https://plus.google.com/117001634240238007187/about"><i class="fa fa-google-plus"></i></a></li>
+                    <li class="social-message-button"><a href="https://twitter.com/CharnasKidsClub"><i class="fa fa-twitter"></i></a></li>
+                    <li class="social-message-button"><a href="https://www.facebook.com/pages/Charnas-Kids-Club/141004962578463"><i class="fa fa-facebook"></i></a></li>
+<!--                    <li class="social-message-button"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    <li class="social-message-button"><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+                  </ul>
+
+                
+              </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+
+
+
+
+   <!--========================================================
+                            FOOTER
+  =========================================================-->
+  <footer>
+    <div class="footer">
+      <div class="footer-content">
+      <div class="container">
+      <div class="row">
+        <div class="grid_8"><div class="footer-content-left">
+          <div class="footer-menu">
+            <ul class="footer-nav">
+              <li><a href="index.html">home</a></li>
+              <li><a href="about.html">about us</a></li>
+              <li><a href="story.html">our story</a></li>
+              <li><a href="news.html">news</a></li>
+              <li><a href="donate.html">donate</a></li>
+              <li><a class="current_footer" href="contact.html">contact us</a></li>
+            </ul>
+            <div class="clear"></div>
+          </div>
+
+          <div class="footer-copyright">
+            <p>
+              Charna Radbell Foundation © <span id="copyright-year">2015</span> All Rights Reserved
+<!--              <span class="vert-line">|</span>   <a href="privacy.html">Privacy Policy</a>More Newborn Website Templates at <a rel="nofollow" href="http://www.templatemonster.com/category/newborn-website-templates/" target="_blank">TemplateMonster.com</a>-->
+            </p>
+          </div>
+        </div></div>
+       
+        <div class="grid_4">
+          <div class="footer-content-right">
+          <div class="footer-socials">
+                 <ul>
+                  <li class="footer-inner"><a href="https://plus.google.com/117001634240238007187/about"><i class="fa fa-google-plus"></i></a></li>
+                  <li class="footer-inner"><a href="https://twitter.com/CharnasKidsClub"><i class="fa fa-twitter"></i></a></li>
+                  <li class="footer-inner"><a href="https://www.facebook.com/pages/Charnas-Kids-Club/141004962578463"><i class="fa fa-facebook"></i></a></li>
+<!--                  <li class="footer-inner"><a href="#"><i class="fa fa-skype"></i></a></li>-->
+                 
+                </ul>
+                <div class="clear"></div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+    
+  </footer>
+   <!--========================================================
+                            END FOOTER
+  =========================================================-->
+
+  
+  <script src="js/script.js"></script>
+  
+
+
+  <script type="text/javascript"> 
+          google_api_map_init(); 
+          function google_api_map_init(){ 
+            var map; 
+            var coordData = new google.maps.LatLng(parseFloat(40.8397069), parseFloat(-73.9412525,14)); 
+            var markCoord1 = new google.maps.LatLng(parseFloat(40.839569), parseFloat(-73.941279,14)); 
+            
+            var marker; 
+ 
+            var styleArray = [
+    {
+        "featureType": "road",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.land_parcel",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.man_made",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "hue": "#a1cdfc"
+            },
+            {
+                "saturation": 30
+            },
+            {
+                "lightness": 49
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "hue": "#f49935"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "hue": "#fad959"
+            }
+        ]
+    }
+]
+             
+            var markerIcon = { 
+                url: "images/gmap_marker.png", 
+                size: new google.maps.Size(42, 65), 
+                origin: new google.maps.Point(0,0), 
+                anchor: new google.maps.Point(21, 70) 
+            }; 
+            function initialize() { 
+              var mapOptions = { 
+                zoom: 16, 
+                center: coordData, 
+                scrollwheel: false, 
+                styles: styleArray 
+              } 
+ 
+              var contentString = "<div></div>"; 
+              var infowindow = new google.maps.InfoWindow({ 
+                content: contentString, 
+                maxWidth: 200 
+              }); 
+               
+              var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions); 
+              marker = new google.maps.Marker({ 
+                map:map, 
+                position: markCoord1, 
+                icon: markerIcon
+              }); 
+
+
+               var contentString = '<div id="content">'+
+                '<div id="siteNotice">'+
+                '</div>'+
+                '<div id="bodyContent">'+
+                '<p>Address: 3959 Broadway, New York, NY 10032 <span><i class="fa fa-phone text-pine"></i>(212) 305-7420</span>'+
+//  '<span><i class="fa fa-fax text-pine"></i>(800) 2345-6789</span</p>'+
+                '</div>'+
+                '</div>';
+
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+           
+
+
+
+            google.maps.event.addListener(marker, 'click', function() {
+              infowindow.open(map,marker);
+              $('.gm-style-iw').parent().parent().addClass("gm-wrapper");
+            });
+
+           
+
+            google.maps.event.addDomListener(window, 'resize', function() {
+
+              map.setCenter(coordData);
+
+              var center = map.getCenter();
+            });
+          }
+
+            google.maps.event.addDomListener(window, "load", initialize); 
+
+          } 
+
+
+
+           
+      </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+/* Contact Form Processing Box
+========================================================*/
+#contact-form .contact-form-loader { 
+  display: none;
+}
+#contact-form.processing .contact-form-loader {
+  display: block;
+}
+
+
+  .page2-block3-picture  a
+    {
+      behavior: url(js/pie.htc); 
+      position:relative;
+    }
+/*
+    .page2-block3-picture a span
+    {
+      behavior: url(js/pie.htc); 
+      position:relative;
+    }*/
+
+   /* .page2-block3-picture a img {
+      border-radius: 620px; 
+       behavior: url(js/pie.htc); 
+      position:relative;
+          }
+*/
+
+      .logo{
+        padding-left: 31px;
+      padding-top:19px;
+      float: left;
+      }
+      .header_navigation{
+        float: right;
+        display: block;
+      }
+
+.logo  .logo-link{
+       
+        font-family: Pacifico;
+        font-size: 36px;
+        line-height: 36px;
+        color: #181818;
+        text-decoration: none;
+      }
+    
+
+     .footer-inner a
+    {
+      behavior: url(js/pie.htc); 
+      position:relative;
+    }
+
+    #toTop {
+    	 behavior: url(js/pie.htc); 
+      position:relative;
+    }
+
+    .social-message a {
+    	 behavior: url(js/pie.htc); 
+      position:relative;
+    }
+
+    .slide-title {
+      background: url('../images/opacity_back.png') repeat;
+
+      }
+
+      .slide-quote {
+        background: url('../images/opacity_back.png') repeat;
+   
+
+      }
+
+      footer {
+        margin-bottom:-100px;
+      }
+
+   
+
+
+
+    
